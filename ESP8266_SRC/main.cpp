@@ -27,7 +27,7 @@ void startWiFi() {
   WiFi.mode(WIFI_AP_STA);
   WiFi.softAP(ssid, password, 9);
 
-  WiFi.begin("ArobsGuest", "arobssoft");
+  WiFi.begin("WifiSSD", "password");
   while (WiFi.status() != WL_CONNECTED) {
     delay(200);
     Serial.print(".");
